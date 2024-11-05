@@ -1,11 +1,11 @@
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
-import {
-    newRestaurant,
-    newReview,
-    newMission,
-    newMyTryingMission
+import { newRestaurant } from "./controllers/restaurant.controller.js";
+import { newMission } from "./controllers/mission.controller.js";
+import { 
+  newReview,
+  newMyTryingMission 
 } from "./controllers/user.controller.js";
 
 dotenv.config();
